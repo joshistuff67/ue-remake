@@ -1,5 +1,3 @@
-
-setfpscap(32555555555555555)
 getgenv().Config = {
     Box = {
         Enable = false,
@@ -27,7 +25,7 @@ getgenv().Config = {
         Enable = false,
         Name = {
             Enable = false,
-            Teamcheck = true,
+            Teamcheck = false,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Studs = {
