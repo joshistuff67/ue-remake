@@ -1,4 +1,5 @@
 
+setfpscap(32555555555555555)
 getgenv().Config = {
     Box = {
         Enable = true,
