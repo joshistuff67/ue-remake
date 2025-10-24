@@ -24,16 +24,16 @@ getgenv().Config = {
     Text = {
         Enable = true,
         Name = {
-            Enable = true,
+            Enable = false,
             Teamcheck = true,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Studs = {
-            Enable = true,
+            Enable = false,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Tool = {
-            Enable = true,
+            Enable = false,
             Color = Color3.fromRGB(255, 255, 255);
         },
 
@@ -44,17 +44,17 @@ getgenv().Config = {
             ShowOutline = false,
             Enable = false,
             Lerp = true;
-            Color1 = Color3.fromRGB(0, 204, 0);
-            Color2 = Color3.fromRGB(0, 204, 0),
-            Color3 = Color3.fromRGB(0, 204, 0)
+            Color1 = Color3.fromRGB(0, 255, 0);
+            Color2 = Color3.fromRGB(255, 255, 0),
+            Color3 = Color3.fromRGB(255, 0, 0)
         },
         Armor = {
             ShowOutline = false,
             Enable = false,
             Lerp = true;
-            Color1 = Color3.fromRGB(51, 102, 255);
-            Color2 = Color3.fromRGB(51, 102, 255),
-            Color3 = Color3.fromRGB(51, 102, 255)
+            Color1 = Color3.fromRGB(0, 0, 255);
+            Color2 = Color3.fromRGB(135, 206, 235),
+            Color3 = Color3.fromRGB(1, 0, 0)
         }
     }
 }
@@ -450,16 +450,16 @@ utility.funcs.update = LPH_NO_VIRTUALIZE(function(player)
         local baseX = position.X + (size.X / 2)
         local baseY = position.Y - gui_inset.Y
     
-        nameLabel.Visible = false
+        nameLabel.Visible = true
         nameLabel.Position = UDim2.new(0, baseX - (nameLabel.AbsoluteSize.X / 2), 0, baseY - textOffset + 6)
         nameLabel.Text = player.Name
     
-        toolLabel.Visible = false
+        toolLabel.Visible = true
         toolLabel.Position = UDim2.new(0, baseX - (toolLabel.AbsoluteSize.X / 2), 0, baseY + size.Y + 15)
         local tool = character:FindFirstChildOfClass("Tool")
         toolLabel.Text = tool and tool.Name or "none"
     
-        studsLabel.Visible = false
+        studsLabel.Visible = true
         studsLabel.Position = UDim2.new(0, baseX - (studsLabel.AbsoluteSize.X / 2), 0, baseY + size.Y + 5)
         local distance = (Camera.CFrame.Position - rootPart.Position).Magnitude
         local meters = distance * 0.28
