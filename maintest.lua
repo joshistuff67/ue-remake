@@ -1,3 +1,5 @@
+
+setfpscap(32555555555555555)
 getgenv().Config = {
     Box = {
         Enable = false,
@@ -22,10 +24,10 @@ getgenv().Config = {
         }
     },
     Text = {
-        Enable = false,
+        Enable = true,
         Name = {
             Enable = false,
-            Teamcheck = false,
+            Teamcheck = true,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Studs = {
@@ -44,17 +46,17 @@ getgenv().Config = {
             ShowOutline = false,
             Enable = false,
             Lerp = true;
-            Color1 = Color3.fromRGB(0, 255, 0);
-            Color2 = Color3.fromRGB(255, 255, 0),
-            Color3 = Color3.fromRGB(255, 0, 0)
+            Color1 = Color3.fromRGB(0, 204, 0);
+            Color2 = Color3.fromRGB(0, 204, 0),
+            Color3 = Color3.fromRGB(0, 204, 0)
         },
         Armor = {
             ShowOutline = false,
             Enable = false,
             Lerp = true;
-            Color1 = Color3.fromRGB(0, 0, 255);
-            Color2 = Color3.fromRGB(135, 206, 235),
-            Color3 = Color3.fromRGB(1, 0, 0)
+            Color1 = Color3.fromRGB(51, 102, 255);
+            Color2 = Color3.fromRGB(51, 102, 255),
+            Color3 = Color3.fromRGB(51, 102, 255)
         }
     }
 }
