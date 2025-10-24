@@ -24,7 +24,7 @@ getgenv().Config = {
         }
     },
     Text = {
-        Enable = true,
+        Enable = false,
         Name = {
             Enable = false,
             Teamcheck = true,
