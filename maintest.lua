@@ -452,16 +452,16 @@ utility.funcs.update = LPH_NO_VIRTUALIZE(function(player)
         local baseX = position.X + (size.X / 2)
         local baseY = position.Y - gui_inset.Y
     
-        nameLabel.Visible = true
+        nameLabel.Visible = false
         nameLabel.Position = UDim2.new(0, baseX - (nameLabel.AbsoluteSize.X / 2), 0, baseY - textOffset + 6)
         nameLabel.Text = player.Name
     
-        toolLabel.Visible = true
+        toolLabel.Visible = false
         toolLabel.Position = UDim2.new(0, baseX - (toolLabel.AbsoluteSize.X / 2), 0, baseY + size.Y + 15)
         local tool = character:FindFirstChildOfClass("Tool")
         toolLabel.Text = tool and tool.Name or "none"
     
-        studsLabel.Visible = true
+        studsLabel.Visible = false
         studsLabel.Position = UDim2.new(0, baseX - (studsLabel.AbsoluteSize.X / 2), 0, baseY + size.Y + 5)
         local distance = (Camera.CFrame.Position - rootPart.Position).Magnitude
         local meters = distance * 0.28
