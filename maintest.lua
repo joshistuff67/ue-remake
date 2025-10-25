@@ -1,6 +1,6 @@
 getgenv().Config = {
     Box = {
-        Enable = false,
+        Enable = true,
         Type = 'Full', -- Corner
         Font = 'ProggyClean',
         Color = Color3.fromRGB(255, 255, 255),
@@ -22,18 +22,18 @@ getgenv().Config = {
         }
     },
     Text = {
-        Enable = false,
+        Enable = true,
         Name = {
-            Enable = false,
+            Enable = true,
             Teamcheck = true,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Studs = {
-            Enable = false,
+            Enable = true,
             Color = Color3.fromRGB(255, 255, 255);
         },
         Tool = {
-            Enable = false,
+            Enable = true,
             Color = Color3.fromRGB(255, 255, 255);
         },
 
@@ -42,7 +42,7 @@ getgenv().Config = {
         Enable = true,
         Health = {
             ShowOutline = false,
-            Enable = false,
+            Enable = true,
             Lerp = true;
             Color1 = Color3.fromRGB(0, 255, 0);
             Color2 = Color3.fromRGB(255, 255, 0),
@@ -50,7 +50,7 @@ getgenv().Config = {
         },
         Armor = {
             ShowOutline = false,
-            Enable = false,
+            Enable = true,
             Lerp = true;
             Color1 = Color3.fromRGB(0, 0, 255);
             Color2 = Color3.fromRGB(135, 206, 235),
