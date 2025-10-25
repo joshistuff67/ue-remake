@@ -23,7 +23,6 @@ getgenv().Config = {
     },
     Text = {
         Enable = false,
-        Font = "ProggyClean",
         Name = {
             Enable = false,
             Teamcheck = true,
