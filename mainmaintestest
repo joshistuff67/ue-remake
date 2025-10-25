@@ -23,6 +23,7 @@ getgenv().Config = {
     },
     Text = {
         Enable = false,
+        Font = "ProggyClean",
         Name = {
             Enable = false,
             Teamcheck = true,
@@ -191,7 +192,7 @@ utility.funcs.make_text = function(p)
     d.TextScaled = false
     d.TextSize = 10
     d.TextStrokeColor3 = Color3.fromRGB(0,0,0)
-    d.FontFace = Fonts[Config.Box.Font]
+    d.FontFace = Fonts[Config.Text.Font or "ProggyClean"]
     return d
 end
 
